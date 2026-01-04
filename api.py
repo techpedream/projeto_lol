@@ -106,7 +106,7 @@ def _get_ranked_match_ids(
 
 
 def main() -> None:
-    load_dotenv("senhas.env")
+    load_dotenv(".env")
     api_key = os.getenv("RIOT_API_KEY", "").strip()
     client = RiotClient(
         api_key=api_key,
